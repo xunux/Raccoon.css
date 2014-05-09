@@ -1,0 +1,68 @@
+
+*,html,body{
+	padding: 0;
+	margin: 0;
+}
+$line :1em;
+$protryFont:Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+.center{
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.article{
+	position: relative;
+	height: 600px;
+}
+@mixin boxSiz() {
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.poetry{
+	@include boxSiz();
+	@for $i from 1 through 6 {
+		h#{$i}{
+			padding-top: 10%+$i*1%;
+		}
+	}
+	h1,h2,h3,h4,h5,h6{
+		font-weight: bold;
+	}
+	.line,p,h1,h2,h3,h4,h5,h6{
+		float:right;
+		width: $line;
+		height:100%;
+		line-height: 1.5em;
+		margin:0 10px;
+	}
+	.line{
+		padding-top: 10%;
+		&:last-child{
+			content: " ";
+		}
+	}
+	.cite{
+		font-style: inherit;
+		&:before,&:after{
+			content:"﹁ ";
+		}
+		&:after{
+			content:" ﹂";
+		}
+		
+	}
+}
+.poetry{
+	padding: 0 20%;
+	font-family: $protryFont;
+	width: 60%;
+	height: 40%;
+	margin: auto;
+	position: absolute;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	background-color: #e3e3e3;
+	@extend .center;
+}
