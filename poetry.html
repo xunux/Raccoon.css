@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>诗歌</title>
-	<link rel="stylesheet" type="text/css" href="erect.css">
+	<link rel="stylesheet" type="text/css" href="init.css">
+	<link rel="stylesheet" type="text/css" href="raccoon.css">
+	<script type="text/javascript" src='jquery-2.1.1.min.js'></script>
+	<script type="text/javascript" src='jquery.raccoon.js'></script>
 </head>
 <body>
 	<div class='poetry'style="width:300px;height:200px">
@@ -12,7 +15,10 @@
 		<p class='line'>千山鸟飞绝 </p>
 		<p class='line'>万径人踪灭 </p>
 		<p class='line'>孤舟蓑笠翁 </p>
-		<p class='line'>独钓<span class='em'>寒</span>江雪 </p>
+		<p class='line'>独钓<span data-style='dot' class='em'>寒江雪</span></p>
 	</div>
+	<script type="text/javascript">
+		$(document).raccoon();
+	</script>
 </body>
 </html>
