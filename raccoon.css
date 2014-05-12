@@ -10,12 +10,11 @@
   height: 600px; }
 
 .poetry {
+  padding-right: 1.5%;
   min-height: 180px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .poetry h1, .poetry h2, .poetry h3, .poetry h4, .poetry h5, .poetry h6 {
-    font-weight: bold; }
   .poetry .line, .poetry p, .poetry h1, .poetry h2, .poetry h3, .poetry h4, .poetry h5, .poetry h6 {
     min-height: 100%;
     -webkit-box-sizing: border-box;
@@ -26,60 +25,86 @@
     width: 1em;
     height: 100%;
     line-height: 1.5em;
-    margin: 0 10px; }
-  .poetry .cite {
-    font-style: inherit; }
-    .poetry .cite:before, .poetry .cite:after {
-      content: "﹁ "; }
-    .poetry .cite:after {
-      content: " ﹂"; }
+    margin: 0 10px;
+    text-align: justify; }
+  .poetry .author {
+    padding-top: 16%;
+    margin-left: 20px; }
+  .poetry .title {
+    font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+    margin-left: 10px; }
+  .poetry .line {
+    font-size: 0.95em;
+    padding-top: 15%; }
+  .poetry .cite-parent:before {
+    content: "︵ "; }
+  .poetry .cite-parent:after {
+    content: " ︶"; }
+  .poetry .cite-bracket:before {
+    content: "︷ "; }
+  .poetry .cite-bracket:after {
+    content: " ︸"; }
+  .poetry .cite-le-mo:before {
+    content: "︿ "; }
+  .poetry .cite-le-mo:after {
+    content: " ﹀"; }
+  .poetry .cite-square:before {
+    content: "︹ "; }
+  .poetry .cite-square:after {
+    content: " ︺"; }
+  .poetry .cite-fe-quotes:before {
+    content: "︽ "; }
+  .poetry .cite-fe-quotes:after {
+    content: " ︾"; }
+  .poetry .cite-single-marks:before {
+    content: "﹁ "; }
+  .poetry .cite-single-marks:after {
+    content: " ﹂"; }
+  .poetry .cite-double-marks:before {
+    content: "﹃ "; }
+  .poetry .cite-double-marks:after {
+    content: " ﹄"; }
+  .poetry .cite-double-quotes:before {
+    content: "︻ "; }
+  .poetry .cite-double-quotes:after {
+    content: " ︼"; }
 
 .em {
   display: inline-block;
   position: relative; }
   .em .em-in:nth-child(1) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 0.1em; }
+    top: 0em; }
   .em .em-in:nth-child(2) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 1.6em; }
+    top: 1.5em; }
   .em .em-in:nth-child(3) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 3.1em; }
+    top: 3em; }
   .em .em-in:nth-child(4) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 4.6em; }
+    top: 4.5em; }
   .em .em-in:nth-child(5) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 6.1em; }
+    top: 6em; }
   .em .em-in:nth-child(6) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 7.6em; }
+    top: 7.5em; }
   .em .em-in:nth-child(7) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 9.1em; }
+    top: 9em; }
   .em .em-in:nth-child(8) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 10.6em; }
+    top: 10.5em; }
   .em .em-in:nth-child(9) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 12.1em; }
+    top: 12em; }
   .em .em-in:nth-child(10) {
     position: absolute;
-    margin-left: -0.1em;
-    top: 13.6em; }
+    top: 13.5em; }
 
 .poetry {
-  font-family: Georgia, "Times New Roman", Times, "Kai", "Kaiti SC", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto;
   position: absolute;
   border: 1px solid #eee;

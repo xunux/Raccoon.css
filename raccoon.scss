@@ -1,5 +1,5 @@
 $line :1em;
-$protryFont:Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+$protryFont:'Helvetica Neue', Helvetica, Arial, sans-serif;
 .center{
 	top:0;
 	left: 0;
@@ -16,11 +16,9 @@ $protryFont:Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","
           box-sizing: border-box;
 }
 .poetry{
+    padding-right: 1.5%;
 	min-height: 180px;
 	@include boxSiz();
-	h1,h2,h3,h4,h5,h6{
-		font-weight: bold;
-	}
 	.line,p,h1,h2,h3,h4,h5,h6{
 		min-height: 100%;
 		@include boxSiz();
@@ -31,17 +29,86 @@ $protryFont:Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","
 		height:100%;
 		line-height: 1.5em;
 		margin:0 10px;
+      text-align: justify;
 	}
+  .author{
+    padding-top: 16%;
+    margin-left: 20px;
+  }
+  .title{
+    font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+    margin-left: 10px;
+  }
+  .line{
+    font-size: 0.95em;
+    padding-top: 15%;
+  }
 	.cite{
-		font-style: inherit;
-		&:before,&:after{
-			content:"﹁ ";
-		}
-		&:after{
-			content:" ﹂";
-		}
-		
 	}
+  .cite-parent{
+    &:before{
+      content: "︵ ";
+    }
+    &:after{
+      content: " ︶";
+    }
+  }
+  .cite-bracket{
+    &:before{
+      content: "︷ ";
+    }
+    &:after{
+      content: " ︸";
+    }
+  }
+  .cite-le-mo{
+    &:before{
+      content: "︿ ";
+    }
+    &:after{
+      content: " ﹀";
+    }
+  }
+  .cite-square{
+    &:before{
+      content: "︹ ";
+    }
+    &:after{
+      content: " ︺";
+    }
+  }
+  .cite-fe-quotes{
+    &:before{
+      content: "︽ ";
+    }
+    &:after{
+      content: " ︾";
+    }
+  }
+  .cite-single-marks{
+    &:before{
+      content:"﹁ ";
+    }
+    &:after{
+      content:" ﹂";
+    }
+  }
+  .cite-double-marks{
+    &:before{
+      content:"﹃ ";
+    }
+    &:after{
+      content:" ﹄";
+    }
+  }
+  .cite-double-quotes{
+    &:before{
+      content:"︻ ";
+    }
+    &:after{
+      content:" ︼";
+    }
+  }
 }
 .em{
 	display: inline-block;
@@ -49,8 +116,7 @@ $protryFont:Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","
 	@for $i from 1 through 10 {
 		.em-in:nth-child(#{$i}){
 			position: absolute;
-			margin-left: -0.1em;
-			top:#{1.5*($i)-1.4}em;
+			top:#{1.5*($i)-1.5}em;
 		}	
 	}
 }

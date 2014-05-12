@@ -9,7 +9,8 @@
 							"dot":"●",
 							"line":"|",
 							"wave":"︴",
-							"sline":"¦",
+							"2dot":"゛",
+                            "dot-hollow":"○",
 							"doline":"‖"
 						}
 			elements.each(function(index,e){

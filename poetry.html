@@ -3,19 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>诗歌</title>
-	<link rel="stylesheet" type="text/css" href="init.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="raccoon.css">
 	<script type="text/javascript" src='jquery-2.1.1.min.js'></script>
 	<script type="text/javascript" src='jquery.raccoon.js'></script>
 </head>
 <body>
 	<div class='poetry'style="width:300px;height:200px">
-		<h1 class='cite'>江雪</h1>
-		<h4>柳宗元</h4>
+		<h1 class="title"><span class="cite cite-double-marks">江雪</span></h1>
+		<h4 class="author"><span class="cite cite-single-marks">柳宗元</span></h4>
 		<p class='line'>千山鸟飞绝 </p>
-		<p class='line'>万径人踪灭 </p>
-		<p class='line'>孤舟蓑笠翁 </p>
-		<p class='line'>独钓<span data-style='dot' class='em'>寒江雪</span></p>
+		<p class='line'><span data-style="dot" class="em">万径</span>人踪灭 </p>
+		<p class='line'>孤舟蓑笠翁</p>
+		<p class='line'>独钓<span data-style='doline' class='em'>寒江雪</span></p>
 	</div>
 	<script type="text/javascript">
 		$(document).raccoon();
