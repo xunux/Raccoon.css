@@ -113,12 +113,9 @@ $protryFont:'Helvetica Neue', Helvetica, Arial, sans-serif;
 .em{
 	display: inline-block;
 	position: relative;
-	@for $i from 1 through 10 {
-		.em-in:nth-child(#{$i}){
-			position: absolute;
-			top:#{1.5*($i)-1.5}em;
-		}	
-	}
+}
+.em-in{
+  position: absolute;
 }
 @mixin writeMode(){
 	writing-mode:tb-rl;

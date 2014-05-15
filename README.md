@@ -3,12 +3,16 @@ Raccoon.css
 
 汉字垂直排版
 
-* 诗歌排版 todo
 
+###todo
+
+* 诗歌排版
+
+    - 英文字符翻转
 	- 段末记号
 	- 加粗显示 		
 		
-* 着重符号限制？（如今是十个字）
+* <span style='text-decoration:line-through'>着重符号限制？（如今是十个字）</span> //js控制 fixed
 * 文章排版 more
 
 

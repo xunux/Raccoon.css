@@ -72,36 +72,9 @@
 .em {
   display: inline-block;
   position: relative; }
-  .em .em-in:nth-child(1) {
-    position: absolute;
-    top: 0em; }
-  .em .em-in:nth-child(2) {
-    position: absolute;
-    top: 1.5em; }
-  .em .em-in:nth-child(3) {
-    position: absolute;
-    top: 3em; }
-  .em .em-in:nth-child(4) {
-    position: absolute;
-    top: 4.5em; }
-  .em .em-in:nth-child(5) {
-    position: absolute;
-    top: 6em; }
-  .em .em-in:nth-child(6) {
-    position: absolute;
-    top: 7.5em; }
-  .em .em-in:nth-child(7) {
-    position: absolute;
-    top: 9em; }
-  .em .em-in:nth-child(8) {
-    position: absolute;
-    top: 10.5em; }
-  .em .em-in:nth-child(9) {
-    position: absolute;
-    top: 12em; }
-  .em .em-in:nth-child(10) {
-    position: absolute;
-    top: 13.5em; }
+
+.em-in {
+  position: absolute; }
 
 .poetry {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

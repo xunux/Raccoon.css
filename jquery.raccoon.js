@@ -12,19 +12,22 @@
 							"2dot":"゛",
                             "dot-hollow":"○",
 							"doline":"‖"
-						}
-			elements.each(function(index,e){
-				var type=$(this).data("style"),				
-				    a=this.innerHTML.length,
+                };
+			elements.each(function(){
+                var self = $(this),
+				    type=self.data("style"),
+				    len=this.innerHTML.length,
 			        item=$("<span class='em-in'>"+styles[type]+"</span>"),
 			        temp=$("<span class='em-wrap-in'></span>");
-			        console.log(a);
-				for (var i = 0; i < a; i++) {
+				for (var i = 0; i < len; i++) {
 					temp.append(item.clone());
-				};
-				$(this).append(temp);
+				}
+				self.append(temp);
+                self.find(".em-in").each(function(index){
+                    $(this).css("top",""+1.5*index+"em");
+                });
 			});
-		},
+		}
 		this.init();
 	}
 
