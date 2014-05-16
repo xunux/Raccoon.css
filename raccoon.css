@@ -76,6 +76,27 @@
 .em-in {
   position: absolute; }
 
+.en {
+  display: inline-block;
+  position: relative;
+  left: .5em;
+  writing-mode: tb-rl;
+  line-height: 0em;
+  height: 2em;
+  width: 20em;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  -webkit-transform: rotate(90deg);
+  /* for Chrome || Safari */
+  -moz-transform: rotate(90deg);
+  /* for Firefox */
+  -ms-transform: rotate(90deg);
+  /* for IE */
+  -o-transform: rotate(90deg);
+  /* for Opera */ }
+
 .poetry {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto;

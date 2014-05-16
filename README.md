@@ -8,11 +8,16 @@ Raccoon.css
 
 * 诗歌排版
 
-    - 英文字符翻转
-	- 段末记号
+    - 英文数字字符翻转
+
+         暂时先定义显式css标签
+
+
+	- 标点符号
+
 	- 加粗显示 		
 		
-* <span style='text-decoration:line-through'>着重符号限制？（如今是十个字）</span> //js控制 fixed
+* [fixed]<span style='text-decoration:line-through'>着重符号 </span>
 * 文章排版 more
 
 
